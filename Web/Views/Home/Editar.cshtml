@@ -1,0 +1,16 @@
+﻿@model  DataAccess.Model.Categoria
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+
+    <form asp-controller="Home" asp-action="Editar">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Nome</label>
+            <input type="text" class="form-control" asp-for="Nome" aria-describedby="emailHelp" placeholder="Enter nome">
+            <span asp-validation-for="Nome"></span>
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
